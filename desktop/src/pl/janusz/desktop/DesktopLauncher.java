@@ -7,6 +7,12 @@ import pl.janusz.FirstGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		
+		config.title = FirstGame.GAME_NAME;
+		config.width = FirstGame.WIDTH;
+		config.height = FirstGame.HEIGHT;
+		config.resizable = false;
+				
 		new LwjglApplication(new FirstGame(), config);
 	}
 }
